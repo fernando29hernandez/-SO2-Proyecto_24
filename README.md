@@ -1,3 +1,3 @@
-# practica2_grupo24_so2
+# Proyecto de laboratorio Sistema Operativos 2
 ## Integrante 1 : Fernando Antonio Hernandez Gramajo - 201403624
 ## Integrante 2 : Luis Omar Solares Morales          - 201403981
