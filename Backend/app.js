@@ -7,7 +7,7 @@ var indexRouter = require('./routes/index');
 var registroRouter = require('./routes/Registro');
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://34.121.175.64//registros', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://34.121.175.64/registros', { useNewUrlParser: true, useUnifiedTopology: true });
 
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
