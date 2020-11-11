@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    environment: test1
+  name: frontenddeploy
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      environment: test1
+  minReadySeconds: 10
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+    type: RollingUpdate 
+  template: 
+     metadata:
+       labels:
+         environment: test1
+     spec:
+       containers:
+       - image: fernando29hernandez/frontend_proyecto
+         name: frontendproyecto 
+         ports:
+           - containerPort: 8080
+
